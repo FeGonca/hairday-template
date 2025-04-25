@@ -9,7 +9,7 @@ export async function schedulesDay() {
     // Os horários disponíveis (horário futuro + não agendado) do lado esquerdo (form)
 
     // Obtém a data do input.
-    const date = selectedDate.value;
+    const date = selectedDate.value;    
 
     // Buscar na API os agendamentos para carregar do lado direito da tela.
     const dailySchedules = await scheduleFetchByDay({ date }) 
